@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.about{
+  background: linear-gradient(gray, cyan);
+  border:1px  black;
+  border-radius: 20px;
+  margin: 20px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-direction: row;
+}
+
+.about h2{
+   font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+font-size: xx-large;
+
+}
+
+.about img{
+    height: 20rem;
+    width: 25rem;
+    border-radius: 10px;
+}
+
+.provided-service{
+    display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-content: center;
+  
+}
+.provided-service h3{
+    color: aqua;
+}
+
+.provided-service dt{
+    color: cadetblue;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Practice</title>
+    <style>
+        .hero-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* When the viewport is in landscape orientation */
+        @media (orientation: landscape) {
+
+            .hero {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        .apartment-card {
+            max-width: 300px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 12px;
+
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Respect users who prefer reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            .hero {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-section">
+
+        <h2>YOUR HOME AWAY FROM HOME</h2>
+
+        <div class="hero">
+            <img src="Today1.jpg" alt="Apartment one">
+            <img src="Today2.jpg" alt="Apartment two">
+            <img src="Today3.jpg" alt="Apartment three">
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

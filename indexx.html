@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+  
+    background-color: #222;
+    padding: 20px 40px;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+.apartments { padding: 40px 20px;
+    text-align: center;
+}
+
+.apartments h1 {
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    line-height: 1.5 ;
+}
+
+.card button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}   
+   
+   
+  
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h2 {
+    margin-bottom: 15px;
+}
+
+.login-card p {
+    margin-bottom: 20px;
+}
+
+.login-card button {
+    padding: 10px 25px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}  
+   </style> 
+</head>
+<body>
+
+    <nav class="navbar">
+
+        <h2 class="logo">STRESSFREE</h2>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+
+
+     <section class="apartments">
+
+    <h1>Our Apartments</h1>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h2>Luxury Suite</h2>
+            <p>Enjoy a comfortable and beautiful apartment.</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h2>Family Apartment</h2>
+            <p>A spacious apartment perfect for families.</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="card">
+            <h2>Executive Suite</h2>
+            <p>Experience comfort and elegance during your stay.</p>
+            <button>View Details</button>
+        </div>
+
+    </div>
+
+</section>
+ <br><br>
+
+ <div class="container">
+
+        <div class="login-card">
+            <h2>Welcome Back!</h2>
+            <p>Log in to continue.</p>
+            <button>Login</button>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

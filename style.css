@@ -1,0 +1,351 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1b2f50;
+  line-height: 1.7;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #203553;
+  color: white;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 30px;
+}
+
+.navbar span,
+.hero-content span {
+  color: #1670ff;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #60a5fa;
+}
+
+/* Home Section */
+.hero {
+  background-color: #edf5ff;
+  padding: 60px 8%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profile-image img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #60a5fa;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+.hero-content h3 {
+  font-size: 19px;
+  font-weight: normal;
+  color: #536b91;
+  margin: 10px 0;
+}
+
+.hero-content p {
+  margin: 15px 0 25px;
+  color: #425779;
+}
+
+.button {
+  display: inline-block;
+  background-color: #1670ff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 28px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.button:hover,
+form button:hover {
+  background-color: #0d50c4;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: #1670ff;
+  margin-top: 8px;
+}
+
+/* About Section */
+.about {
+  padding: 35px 8%;
+  background-color: white;
+}
+
+.about p {
+  max-width: 600px;
+  color: #425779;
+}
+
+/* Skills Section */
+.skills {
+  background-color: #f2f6fb;
+  padding: 30px 8% 40px;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: white;
+  border: 1px solid #dbe5f2;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.skill-icon {
+  width: 85px;
+  height: 85px;
+  margin: auto;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.html-icon {
+  background-color: #f45136;
+}
+
+.css-icon {
+  background-color: #2498ef;
+}
+
+.js-icon {
+  background-color: #ffc52e;
+  color: #17243b;
+}
+
+.responsive-icon {
+  background-color: #783cf5;
+}
+
+.skill-card h3 {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 30px 8% 40px;
+  background-color: white;
+}
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd8e9;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #1670ff;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 170px;
+  background-color: #1670ff;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-info {
+  flex: 1;
+  border-left: 1px solid #dbe5f2;
+  padding: 10px 0 10px 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-icon {
+  background-color: #e3efff;
+  color: #1670ff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-item h3 {
+  font-size: 15px;
+}
+
+.info-item p {
+  color: #536b91;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  background-color: #203553;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+  }
+
+  .hero-content h3 {
+    font-size: 17px;
+  }
+
+  section h2::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about,
+  .skills,
+  .contact {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .skill-container {
+    justify-content: center;
+  }
+
+  .skill-card {
+    flex: 1 1 40%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    border-left: none;
+    border-top: 1px solid #dbe5f2;
+    padding: 25px 0 0;
+  }
+}

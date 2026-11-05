@@ -1,0 +1,208 @@
+
+body {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+   
+
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: gray;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+
+
+
+.logo {
+  color: white;
+  padding-left: 10px;
+}
+.nav-link {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.hero-section {
+  text-align: center;
+}
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: greenyellow;
+}
+a:hover {
+  color: red;
+  background-color: coral;
+}
+a:active {
+  color: blueviolet;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin: 20px;
+  text-decoration: none;
+}
+
+.hero img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 1;
+}
+
+.grid-section {
+  margin: 20px;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: auto;
+ 
+  align-items: center;
+  gap: 20px;
+  object-fit: cover;
+}
+.grid-section h3 {
+  margin-left: 20px;
+}
+.container {
+  font-style:normal;
+  background-color: beige;
+  padding-left: 2px;
+}
+.booking-btn a {
+  display: inline-block;
+  border: 1px solid gray;
+  color: black;
+
+  font-style: normal;
+  padding: 5px;
+  text-decoration: none;
+}
+.booking-btn a:hover {
+  background-color: deepskyblue;
+}
+
+.booking-details {
+  background: linear-gradient(to right, #e5e7eb, #a5f3fc);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 15px;
+}
+
+.booking-details h2 {
+  text-align: center;
+  color: #173d32;
+  margin-bottom: 25px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.booking-form button {
+  background-color: #173d32;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.booking-form button:hover {
+  background-color: #c6a15b;
+}
+
+h4 {
+  text-align: center;
+}
+.apartments-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin-top: 20px;
+  gap: 20px;
+  line-height: 20px;
+}
+
+.apartments-card img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.apartments-card p {
+  color: #333;
+  font-family: sans-serif;
+}
+.main-reason {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 25px;
+}
+
+
+@media (max-width: 900px) {
+    .apartments-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .apartments-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer{
+background-image: url(Today3.jpg);
+align-content: center;
+text-align: center;
+color:  rgb(210, 30, 45);
+
+}
+
+.contact-section h3{
+  color: black;
+  font-weight: bold;
+}
+
+.contact-section h2{
+  color: black;
+  font-weight: bold;
+}
